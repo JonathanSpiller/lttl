@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block js %}
+<script type="text/javascript" src="{% static 'js/shortener.js' %}"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/shortener.css' %}">
+{% endblock %}
+
+{% block content %}
+
+{% csrf_token %}
+<div id='wrapper' class='day'>
+	<input id="url-input" class="form-control form-control-lg" type="text" placeholder="Enter a url to make little ...">
+	<button id="make-little" type="button" class="btn btn-info btn-lg action" rel="{% url 'shortener.shorten' %}">Make me little!</button>
+	<div id="url-output-holder">
+		<input id="url-output" readonly class="form-control form-control-lg yellow-glow" type="text">
+	</div>
+</div>
+
+{% endblock %}

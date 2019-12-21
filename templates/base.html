@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	{% load static %}
+	<script	src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="{% static 'js/csrf.js' %}"></script>
+	{% block js %}{% endblock %}
+
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{% static 'css/base.css' %}">
+	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+	{% block css %}{% endblock %}
+
+	{% block title %}<title>For LiTTLe urls</title>{% endblock %}
+
+</head>
+<body>
+{% block content %}
+{% endblock %}
+
+	<!-- Generic Data Form -->
+	<!-- <form id="data_form" action="" method="POST" style="display: hidden">
+			{% csrf_token %}
+			<input type="hidden" id="data_form_payload" name="data_form_payload" value=""/>
+	</form> -->
+
+<!-- Modal -->
+
+</body>
+</html>

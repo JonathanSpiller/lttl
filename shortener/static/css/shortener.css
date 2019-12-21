@@ -1,0 +1,89 @@
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.day {
+    background: url('../images/city.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.night {
+    background: url('../images/city2.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#url-input {
+    width: 60%;
+    height: 2.4em !important;
+    font-size: 1.2em;
+    text-align: center;
+    opacity: 0.9;
+    background-color: lightcyan;
+    box-shadow: 0px 0px 20px 5px #01b68f;
+}
+
+#url-input::placeholder {
+    color: lightslategray;
+}
+
+.red-text {
+    /* color: #de7b7b !important; */
+}
+
+button.action {
+    /* https://bootsnipp.com/snippets/7KaXj */
+    margin: 1.3em 0;
+    width: 15%;
+    min-width: 234px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 20px 3px #01b68f
+    
+}
+
+#make-little{
+    /* background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%); */
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+}
+
+#daytime{
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+
+#make-little:hover, #daytime:hover {
+    background-position: right center; /* change the direction of the animation here */
+}
+
+#url-output-holder {
+    visibility: hidden;
+    width: 15%;
+}
+
+#url-output{
+    height: 2em !important;
+    font-size: 1.1em;
+    text-align: center;
+    opacity: 0.9;
+    background-color: lightcyan;
+    
+}
+
+.yellow-glow {
+    box-shadow: 0px 0px 20px 5px #01b68f/* #fffa5a; */
+}
+
+.red-glow {
+    box-shadow: 0px 0px 10px 5px #de7b7b;
+}

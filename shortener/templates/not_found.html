@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block js %}
+<script type="text/javascript" src="{% static 'js/shortener.js' %}"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/shortener.css' %}">
+{% endblock %}
+
+{% block content %}
+
+{% csrf_token %}
+<div id='wrapper' class='night'>
+	<input id="url-input" class="form-control form-control-lg ninja">
+	<button id="daytime" type="button" class="btn btn-info btn-lg action" rel="{% url 'shortener.index' %}">Lights please!</button>
+	<div id="url-output-holder">
+		<input id="url-output" readonly class="form-control form-control-lg" type="text">
+	</div>
+</div>
+
+{% endblock %}
